@@ -15,6 +15,10 @@ then run
   sh django.sh setup_db
   sh django.sh init_db
 
+run migrations: python3 manage.py makemigrations
+python3 manage.py migrate
+
+
 create super user : python3 manage.py createsuperuser
 
 run server python3 manage.py runserver
